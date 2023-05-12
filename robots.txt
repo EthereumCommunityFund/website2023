@@ -1,0 +1,13 @@
+# Robots.txt for https://ecf.network
+User-Agent: *
+Sitemap: https://ecf.network/assets/xml/sitemap.xml
+
+Disallow: /_wpeprivate
+Disallow: /assets
+Disallow: /blog
+Disallow: /landing
+Disallow: /wp-admin
+Disallow: /wp-content
+Disallow: /wp-includes
+
+Disallow: /404.phpDisallow: /app.phpDisallow: /brand.phpDisallow: /legal.phpDisallow: /team.php

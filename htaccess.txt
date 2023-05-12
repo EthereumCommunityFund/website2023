@@ -1,0 +1,34 @@
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^ecf.network[nc]
+RewriteRule ^(.*)$ http://www.ecf.network/$1 [r=301,nc]
+
+Redirect 301 https://ecf.network/assets/images/logo.webp https://ecf.network/assets/images/logo-light.webp
+Redirect 301 /assets/images/icons/twitter.webp /assets/images/icons/twitter-white.webp
+Redirect 301 /about /about.php
+Redirect 301 /app /app.php
+Redirect 301 /brand /brand.php
+Redirect 301 /careers /careers.php
+Redirect 301 /donate /donate.php
+Redirect 301 /get-involved /get-involved.php
+Redirect 301 /getinvolved /get-involved.php
+Redirect 301 /join /get-involved.php
+Redirect 301 /legal /legal.php
+Redirect 301 /pensieve /ecf-pensieve-whitepaper.pdf
+Redirect 301 /team /team.php
+Redirect 301 /whitepaper /ecf-pensieve-whitepaper.pdf
+
+RedirectMatch 301 /about(.*) /about.php/$1
+RedirectMatch 301 /app(.*) /app.php/$1
+RedirectMatch 301 /brand(.*) /brand.php/$1
+RedirectMatch 301 /careers(.*) /careers.php/$1
+RedirectMatch 301 /donate(.*) /donate.php/$1
+RedirectMatch 301 /get-involved(.*) /get-involved.php/$1
+RedirectMatch 301 /getinvolved(.*) /get-involved.php/$1
+RedirectMatch 301 /join(.*) /get-involved.php/$1
+RedirectMatch 301 /legal(.*) /legal.php/$1
+RedirectMatch 301 /pensieve(.*) /ecf-pensieve-whitepaper.pdf/$1
+RedirectMatch 301 /team(.*) /team.php/$1
+RedirectMatch 301 /whitepaper(.*) /ecf-pensieve-whitepaper.pdf/$1
+
+ErrorDocument 404 /404.php
